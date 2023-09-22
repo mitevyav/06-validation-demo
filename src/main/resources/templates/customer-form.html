@@ -27,9 +27,15 @@
 
     <br><br>
 
-    Free Passes (*): <input type="text" th:field="*{freePasses}"/><br>
+    Free Passes: <input type="text" th:field="*{freePasses}"/><br>
 
-    <span th:if="${#fields.hasErrors('freePasses')}" th:errors="*{freePasses}" class="error">Value must be in the range 0-10</span>
+    <span th:if="${#fields.hasErrors('freePasses')}" th:errors="*{freePasses}" class="error"></span>
+
+    <br><br>
+
+    Postal Code: <input type="text" th:field="*{postalCode}"/><br>
+
+    <span th:if="${#fields.hasErrors('postalCode')}" th:errors="*{postalCode}" class="error"></span>
 
     <br><br><br>
 
