@@ -25,6 +25,14 @@
 
     <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}" class="error">Incorrect last name</span>
 
+    <br><br>
+
+    Free Passes (*): <input type="text" th:field="*{freePasses}"/><br>
+
+    <span th:if="${#fields.hasErrors('freePasses')}" th:errors="*{freePasses}" class="error">Value must be in the range 0-10</span>
+
+    <br><br><br>
+
     <input type="submit" value="Submit">
 
 </form>
